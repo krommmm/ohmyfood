@@ -1,0 +1,1327 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+}
+
+main a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-header i {
+  color: black;
+  opacity: 0.8;
+}
+.menu-header i:active {
+  color: black;
+}
+.menu-header i:link {
+  color: black;
+}
+.menu-header i:visited {
+  color: black;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+body h1,
+h2,
+h3,
+h4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+
+input:focus {
+  /*supprimer cadre bleu du focus*/
+  outline: none;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#restaurants p {
+  font-size: 20px;
+}
+
+#restaurants > p {
+  font-weight: 600;
+}
+
+#restaurants .card__bot .bot__text p:nth-child(1) {
+  font-weight: 600;
+}
+#restaurants .card__bot .bot__text p:nth-child(2) {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.palette {
+  object-position: 50% 96%;
+}
+
+.note {
+  object-position: 50% 61%;
+}
+
+.française {
+  object-position: 50% 98%;
+}
+
+.delice {
+  object-position: 50% 100%;
+}
+
+/* Partie menus*/
+#pages .pages__full h2 {
+  font-size: 33px;
+  font-weight: 500;
+  padding: 40px 0px 0px 20px;
+}
+#pages .full__plats .plats__entrées .box .check > p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+#pages .full__plats .full__resistance .box .check > p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+#pages .full__plats .full__desserts .box .check > p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* partie entrés,plats,desserts*/
+.defilement-1 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-1 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-2 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-2 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-3 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-3 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-4 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-4 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-5 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-5 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-6 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-6 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-7 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-7 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-8 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-8 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-9 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-9 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.defilement-10 p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.defilement-10 p:nth-child(2) {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.button-rose {
+  background: #9356dc;
+  background: linear-gradient(3deg, #9356dc 0%, #ff79da 100%);
+  color: white;
+  border-radius: 50px;
+  padding: 15px;
+  box-shadow: 7px 5px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.button-rose:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+
+.main-header {
+  background-color: white;
+  height: 70px;
+}
+
+.main-header img {
+  height: 30px;
+}
+
+.menu-header {
+  background-color: white;
+  height: 70px;
+}
+.menu-header i {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+}
+.menu-header img {
+  position: relative;
+}
+
+header img {
+  height: 30px;
+}
+
+.footer {
+  background-color: rgb(53, 53, 53);
+  position: static;
+  color: white;
+  margin: 0% 0% 0% 0%;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 0px 0px 0px;
+}
+.footer a p {
+  margin: 3px 0px 0px 0px;
+}
+.footer h1 {
+  height: 20px;
+  margin: 0px 0px 30px 30px;
+  padding: 20px 0px 20px 0px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer ul {
+  margin: 10px 0px 0px 30px;
+  padding: 0px 0px 30px 0px;
+}
+.footer .header__nav .nav__item {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  height: 25px;
+}
+.footer .header__nav .nav__item i {
+  margin: 0px 12px 0px 0px;
+  font-size: 12px;
+}
+.footer .header__nav .nav__item p {
+  margin: 0px 0px 0px 0px;
+}
+
+/*Location*/
+.location-container {
+  position: relative;
+  background-color: rgb(234, 234, 234);
+  box-shadow: 0px 3px 6px rgb(189, 189, 189) inset;
+  height: 50px;
+}
+.location-container form i {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.location-container input {
+  margin-top: 15px;
+  border: none;
+  background-color: rgb(234, 234, 234);
+  max-width: 145px;
+}
+.location-container input::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*Reservation*/
+#reservation {
+  position: relative;
+  background-color: rgb(246, 246, 246);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+#reservation .reservation__container {
+  margin-bottom: 22px;
+  padding-top: 19px;
+}
+#reservation .reservation__container > p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  max-width: 70%;
+  padding: 0;
+  margin: 5px;
+}
+#reservation .reservation__container p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+/*Operation*/
+#operation {
+  position: relative;
+}
+#operation > p {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 40px 0px 0px 6%;
+}
+#operation a {
+  display: inline-block;
+}
+#operation #operation__card {
+  background: RGBa(147, 86, 220, 0.1);
+  width: 85vw;
+  padding: 15px;
+  margin: 4% 0% 2% 10%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 0px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+#operation #operation__card:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+#operation #operation__card .card__number {
+  position: absolute;
+  margin-left: -85vw;
+  background-color: #9356dc;
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+#operation #operation__card .card__icon {
+  position: relative;
+  margin-left: 6%;
+  margin-right: 5%;
+  font-size: 20px;
+}
+#operation #operation__card .card__icon i {
+  color: #9356dc;
+}
+#operation #operation__card .card__txt {
+  padding: 15px;
+  font-weight: 600;
+  position: relative;
+  width: 100%;
+}
+#operation .operation__card {
+  background-color: rgb(246, 246, 246);
+  width: 85vw;
+  padding: 15px;
+  margin: 4% 0% 2% 10%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 0px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+#operation .operation__card:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+#operation .operation__card .card__number {
+  position: absolute;
+  margin-left: -85vw;
+  background-color: #9356dc;
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+#operation .operation__card .card__icon {
+  position: relative;
+  margin-left: 6%;
+  margin-right: 5%;
+  font-size: 20px;
+}
+#operation .operation__card .card__icon i {
+  color: rgb(126, 126, 126);
+}
+#operation .operation__card .card__txt {
+  padding: 15px;
+  font-weight: 600;
+  position: relative;
+  width: 100%;
+}
+
+/*Restaurant*/
+#restaurants {
+  background-color: rgb(246, 246, 246);
+  padding-bottom: 50px;
+  position: relative;
+}
+#restaurants > p {
+  margin: 10% 0px 3% 6%;
+  padding-top: 11%;
+  padding-bottom: 2%;
+}
+#restaurants .restaurants__container {
+  /*Coeur du restaurant*/
+}
+#restaurants .restaurants__container .container__card {
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  margin: 0% 5% 0% 5%;
+  box-shadow: 5px 5px 15px 5px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+#restaurants .restaurants__container .container__card:hover {
+  transition-duration: 1s;
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+}
+#restaurants .restaurants__container .container__card .card__top .top__new {
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  display: inline-block;
+  position: absolute;
+  margin-bottom: 27vw;
+  margin-left: 60vw;
+  padding: 2%;
+  border-radius: 5px;
+  font-weight: 600;
+}
+#restaurants .restaurants__container .container__card .card__top img {
+  width: 96vw;
+  height: 46vw;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+#restaurants .restaurants__container .container__card .card__top img .palette {
+  object-position: 50% 94%;
+}
+#restaurants .restaurants__container .container__card .card__top img .note {
+  object-position: 100% 61%;
+}
+#restaurants .restaurants__container .container__card .card__top img .française {
+  object-position: 49% 69%;
+}
+#restaurants .restaurants__container .container__card .card__top img .delice {
+  object-position: 49% 98%;
+}
+#restaurants .restaurants__container .container__card .card__bot {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  min-height: 70px;
+}
+#restaurants .restaurants__container .container__card .card__bot p:first-child {
+  margin: 15px 0px 0px 10px;
+  padding: 0px 0px 0px 0px;
+}
+#restaurants .restaurants__container .container__card .card__bot p:last-child {
+  margin: 3px 0px 0px 10px;
+}
+#restaurants .restaurants__container .container__heart {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  left: 28vw;
+  bottom: 60px;
+  position: relative;
+  z-index: 3;
+}
+#restaurants .restaurants__container .container__heart input {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: -5px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+#restaurants .restaurants__container .container__heart input:checked ~ .far {
+  transition-duration: 2s;
+  opacity: 0;
+}
+#restaurants .restaurants__container .container__heart input:checked ~ .fas {
+  transition-duration: 2s;
+  opacity: 1;
+}
+#restaurants .restaurants__container .container__heart > i {
+  color: black;
+  position: absolute;
+  right: -5px;
+  top: 0px;
+}
+#restaurants .restaurants__container .container__heart .fas {
+  /*plein*/
+  opacity: 0;
+  transition-duration: 0.5s;
+  background: linear-gradient(3deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#restaurants .restaurants__container .container__heart .fa-heart {
+  font-size: 30px;
+}
+
+#pages .pages__full {
+  background-color: rgb(246, 246, 246);
+  position: relative;
+  margin-top: -100px;
+  border-radius: 50px 50px 0px 0px;
+  height: 100%;
+  /*MARGES*/
+  /* espace entre les section entrées plats desserts*/
+  /*button de la fin*/
+}
+#pages .pages__full .full__plats {
+  margin: 4%;
+  /*border titres entrées plats désserts*/
+}
+#pages .pages__full .full__plats .box .check > p {
+  width: 56px;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 7px;
+  padding-top: 20px;
+}
+#pages .pages__full.plats__entrées,
+#pages .pages__full .full__resistance,
+#pages .pages__full .full__desserts {
+  margin-bottom: 60px;
+}
+#pages .pages__full .box-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#pages .pages__full .box-button .button-rose {
+  margin-top: 0px;
+  margin-bottom: 100px;
+  width: 200px;
+}
+
+/*Format Tablette*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /*operation*/
+  #pages .full__plats .defilement-1 {
+    opacity: 0;
+    animation-name: defilement-1;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-2 {
+    opacity: 0;
+    animation-name: defilement-2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-3 {
+    opacity: 0;
+    animation-name: defilement-3;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-4 {
+    opacity: 0;
+    animation-name: defilement-4;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-5 {
+    opacity: 0;
+    animation-name: defilement-5;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-6 {
+    opacity: 0;
+    animation-name: defilement-6;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-7 {
+    opacity: 0;
+    animation-name: defilement-7;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-8 {
+    opacity: 0;
+    animation-name: defilement-8;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-9 {
+    opacity: 0;
+    animation-name: defilement-9;
+    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-10 {
+    opacity: 0;
+    animation-name: defilement-10;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    max-width: 50vw;
+    border-radius: 15px;
+  }
+}
+/*Format Desktop*/
+@media screen and (min-width: 993px) {
+  /* OPERATION */
+  #operation {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  #operation p {
+    position: absolute;
+    margin: -40px 0px 0px 0px;
+  }
+  #operation .operation__card {
+    max-width: 200px;
+    margin-right: 40px;
+  }
+  #operation .operation__card .card__number {
+    margin-left: -200px;
+    margin-right: 10px;
+  }
+  #operation .operation__card img {
+    max-width: 200px;
+  }
+  #operation #operation__card {
+    max-width: 200px;
+    margin-right: 40px;
+  }
+  #operation #operation__card .card__number {
+    margin-left: -200px;
+    margin-right: 10px;
+  }
+  #operation #operation__card img {
+    max-width: 200px;
+  }
+
+  /*RESTAURANTS*/
+  #restaurants > p {
+    margin: 3% 0px 0% 46%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+  }
+  #restaurants .restaurants__container .container__card .card__top img {
+    width: 40vw;
+    height: 30vh;
+  }
+  #restaurants .restaurants__container .container__card .card__top .top__new {
+    margin-bottom: 59px;
+    margin-left: 31vw;
+    padding: 1%;
+  }
+  #restaurants .restaurants__container .container__card .card__bot {
+    height: auto;
+    width: 44vw;
+    margin: 0px 0px 0px 0px;
+  }
+  #restaurants .restaurants__container .container__heart {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    left: 15vw;
+    position: relative;
+    bottom: 53px;
+    z-index: 3;
+  }
+
+  /*Section menu*/
+  #pages .full__plats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #pages .full__plats .defilement-1 {
+    opacity: 0;
+    animation-name: defilement-1;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-2 {
+    opacity: 0;
+    animation-name: defilement-2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-3 {
+    opacity: 0;
+    animation-name: defilement-3;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-4 {
+    opacity: 0;
+    animation-name: defilement-4;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-5 {
+    opacity: 0;
+    animation-name: defilement-5;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-6 {
+    opacity: 0;
+    animation-name: defilement-6;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-7 {
+    opacity: 0;
+    animation-name: defilement-7;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-8 {
+    opacity: 0;
+    animation-name: defilement-8;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-9 {
+    opacity: 0;
+    animation-name: defilement-9;
+    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  #pages .full__plats .defilement-10 {
+    opacity: 0;
+    animation-name: defilement-10;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+}
+.full__heart > i, .button-rose, .main-header, .menu-header, .location-container form, #operation #operation__card, #operation #operation__card .card__number, #operation .operation__card, #operation .operation__card .card__number, #restaurants .restaurants__container .container__card .card__top, #restaurants .restaurants__container .container__heart > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reservation, #reservation .reservation__container, #restaurants .restaurants__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*LOADING SPINNER*/
+.loading-content {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -100%;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background: linear-gradient(3deg, #9356dc 0%, #ff79da 100%);
+  animation-name: load-content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.loading {
+  border: 5px solid #9356dc;
+  border-top: 5px solid #ff79da;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: loading 0.8s ease-in-out;
+  animation-iteration-count: 3;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load-content {
+  0% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+}
+/*ANIMATION HEART pages*/
+#pages .top img {
+  width: 100%;
+  max-height: 300px;
+  min-height: 350px;
+  object-fit: cover;
+}
+#pages .full__heart {
+  padding: 45px 0px 0px 40px;
+}
+
+.full__heart {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  margin-right: 20px;
+}
+
+#pages .fas {
+  opacity: 0;
+  transition-duration: 0.5s;
+  background: linear-gradient(3deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.full__heart > i {
+  position: absolute;
+}
+
+#pages input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#pages .fa-heart {
+  font-size: 30px;
+}
+
+#pages input:checked ~ .far {
+  transition-duration: 2s;
+  opacity: 0;
+}
+
+#pages input:checked ~ .fas {
+  transition-duration: 2s;
+  opacity: 1;
+}
+
+/*ANIMATION CARD la cloche*/
+.plats__entrées .loading,
+.full__resistance .loading,
+.full__desserts .loading {
+  width: 80vw;
+  max-width: 30rem;
+  margin: auto;
+  position: relative;
+}
+.plats__entrées .container,
+.full__resistance .container,
+.full__desserts .container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.plats__entrées .description,
+.full__resistance .description,
+.full__desserts .description {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+.plats__entrées .texte,
+.full__resistance .texte,
+.full__desserts .texte {
+  width: 100%;
+  margin-left: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+.plats__entrées .price,
+.full__resistance .price,
+.full__desserts .price {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 100%;
+  opacity: 0.8;
+}
+.plats__entrées .icone,
+.full__resistance .icone,
+.full__desserts .icone {
+  width: 100px;
+  background: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -100px;
+  /*le range vers la droite*/
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.plats__entrées .icone > i,
+.full__resistance .icone > i,
+.full__desserts .icone > i {
+  color: #99e2d0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: white;
+  transition-duration: 0.5s;
+}
+.plats__entrées .texte > *,
+.full__resistance .texte > *,
+.full__desserts .texte > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+.plats__entrées input,
+.full__resistance input,
+.full__desserts input {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: absolute;
+  cursor: pointer;
+  left: -3px;
+}
+.plats__entrées input:checked ~ .container .icone,
+.full__resistance input:checked ~ .container .icone,
+.full__desserts input:checked ~ .container .icone {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.plats__entrées input:checked ~ .container i,
+.full__resistance input:checked ~ .container i,
+.full__desserts input:checked ~ .container i {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transform: rotate(360deg);
+}
+.plats__entrées .price,
+.full__resistance .price,
+.full__desserts .price {
+  margin-left: 0.5rem;
+}
+
+/* DEFILLEMENT MENU*/
+.full__plats .defilement-1 {
+  opacity: 0;
+  animation-name: defilement-1;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-1:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-2 {
+  opacity: 0;
+  animation-name: defilement-2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-2:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-3 {
+  opacity: 0;
+  animation-name: defilement-3;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-3:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-4 {
+  opacity: 0;
+  animation-name: defilement-4;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-4:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-5 {
+  opacity: 0;
+  animation-name: defilement-5;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-5:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-6 {
+  opacity: 0;
+  animation-name: defilement-6;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-6:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-7 {
+  opacity: 0;
+  animation-name: defilement-7;
+  animation-duration: 2s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-7:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-8 {
+  opacity: 0;
+  animation-name: defilement-8;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-8:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-9 {
+  opacity: 0;
+  animation-name: defilement-9;
+  animation-duration: 2s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-9:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+.full__plats .defilement-10 {
+  opacity: 0;
+  animation-name: defilement-10;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  box-shadow: 8px 8px 8px rgb(189, 189, 189);
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.full__plats .defilement-10:hover {
+  filter: brightness(1.1);
+  box-shadow: 20px 20px 10px rgb(189, 189, 189);
+  transition-duration: 1s;
+}
+@keyframes defilement-1 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-4 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-5 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-6 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-7 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-8 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-9 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes defilement-10 {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/*# sourceMappingURL=1.css.map */

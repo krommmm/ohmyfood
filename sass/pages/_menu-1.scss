@@ -1,0 +1,40 @@
+#pages .pages__full {
+  background-color: $light-grey;
+  position: relative;
+  margin-top: -100px;
+
+  border-radius: 50px 50px 0px 0px;
+  height: 100%;
+
+  /*MARGES*/
+  & .full__plats {
+    margin: 4%;
+
+    /*border titres entrées plats désserts*/
+    .box .check > p {
+      width: 56px;
+      border-bottom: 3px solid #99e2d0;
+      padding-bottom: 7px;
+      padding-top: 20px;
+    }
+  }
+  /* espace entre les section entrées plats desserts*/
+  &.plats__entrées,
+  .full__resistance,
+  .full__desserts {
+    margin-bottom: 60px;
+  }
+
+  /*button de la fin*/
+  & .box-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    & .button-rose {
+      margin-top: 0px;
+      margin-bottom: 100px;
+      width: 200px;
+    }
+  }
+}

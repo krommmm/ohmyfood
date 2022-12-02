@@ -1,0 +1,4 @@
+@function light-color($color, $percent) {
+  $new-color: lighten($color, $percent);
+  @return $new-color;
+}

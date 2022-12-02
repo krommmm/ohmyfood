@@ -1,0 +1,122 @@
+/*Format Tablette*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /*operation*/
+  #pages .full__plats {
+    @for $i from 1 through 10 {
+      .defilement-#{($i)} {
+        opacity: 0;
+        animation-name: defilement-#{($i)};
+        animation-duration: 2s;
+        animation-delay: $i * 0.5s;
+        animation-fill-mode: forwards;
+        max-width: 50vw;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+/*Format Desktop*/
+@media screen and (min-width: 993px) {
+  /* OPERATION */
+  #operation {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    & p {
+      position: absolute;
+      margin: -40px 0px 0px 0px;
+    }
+
+    & .operation__card {
+      max-width: 200px;
+      margin-right: 40px;
+
+      & .card__number {
+        margin-left: -200px;
+        margin-right: 10px;
+      }
+
+      & img {
+        max-width: 200px;
+      }
+    }
+
+    & #operation__card {
+      max-width: 200px;
+      margin-right: 40px;
+
+      & .card__number {
+        margin-left: -200px;
+        margin-right: 10px;
+      }
+
+      & img {
+        max-width: 200px;
+      }
+    }
+  }
+
+  /*RESTAURANTS*/
+
+  #restaurants {
+    & > p {
+      margin: 3% 0px 0% 46%;
+      padding-top: 5%;
+      padding-bottom: 4%;
+    }
+
+    & .restaurants__container {
+      .container__card {
+        & .card__top {
+          & img {
+            width: 40vw;
+            height: 30vh;
+          }
+
+          & .top__new {
+            margin-bottom: 59px;
+            margin-left: 31vw;
+            padding: 1%;
+          }
+        }
+
+        & .card__bot {
+          height: auto;
+          width: 44vw;
+          margin: 0px 0px 0px 0px;
+        }
+      }
+
+      & .container__heart {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        left: 15vw;
+        position: relative;
+        bottom: 53px;
+        z-index: 3;
+      }
+    }
+  }
+
+  /*Section menu*/
+  #pages .full__plats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @for $i from 1 through 10 {
+      .defilement-#{($i)} {
+        opacity: 0;
+        animation-name: defilement-#{($i)};
+        animation-duration: 2s;
+        animation-delay: $i * 0.5s;
+        animation-fill-mode: forwards;
+        width: 400px;
+        margin-right: 50px;
+        border-radius: 15px;
+      }
+    }
+  }
+}

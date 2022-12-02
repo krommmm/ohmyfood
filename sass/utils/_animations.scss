@@ -1,0 +1,255 @@
+/*LOADING SPINNER*/
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$dark-green: rgb(0, 135, 102);
+
+.loading-content {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -100%;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background: linear-gradient(
+    3deg,
+    ($primary-color) 0%,
+    ($secondary-color) 100%
+  );
+  animation-name: load-content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards; // forwards: ne se reset pas une fois l'exe finit
+  overflow: hidden; // Ce qui dépasse du loading-content est caché (cache la page principale)
+}
+
+.loading {
+  border: 5px solid $primary-color;
+  border-top: 5px solid $secondary-color;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: loading 0.8s ease-in-out;
+  animation-iteration-count: 3;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load-content {
+  0% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+}
+
+/*ANIMATION HEART pages*/
+#pages {
+  .top img {
+    width: 100%;
+    max-height: 300px;
+    min-height: 350px;
+    object-fit: cover;
+  }
+
+  .full__heart {
+    padding: 45px 0px 0px 40px;
+  }
+}
+
+.full__heart {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  margin-right: 20px;
+}
+
+#pages .fas {
+  opacity: 0;
+  transition-duration: 0.5s;
+  background: linear-gradient(
+    3deg,
+    ($primary-color) 0%,
+    ($secondary-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.full__heart > i {
+  position: absolute;
+  @extend %center-center;
+}
+
+#pages input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#pages .fa-heart {
+  font-size: 30px;
+}
+
+#pages input:checked ~ .far {
+  transition-duration: 2s;
+  opacity: 0;
+}
+
+#pages input:checked ~ .fas {
+  transition-duration: 2s;
+  opacity: 1;
+}
+
+/*ANIMATION CARD la cloche*/
+.plats__entrées,
+.full__resistance,
+.full__desserts {
+  .loading {
+    width: 80vw;
+    max-width: 30rem;
+    margin: auto;
+    position: relative;
+  }
+  .container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .texte {
+    width: 100%;
+    margin-left: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .price {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    max-width: 100%;
+    opacity: 0.8;
+  }
+
+  .icone {
+    width: 100px;
+    background: #99e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -100px; /*le range vers la droite*/
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+  .icone > i {
+    color: #99e2d0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: white;
+    transition-duration: 0.5s;
+  }
+
+  .texte > * {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  input {
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    cursor: pointer;
+    left: -3px;
+  }
+
+  input:checked ~ .container .icone {
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+  input:checked ~ .container i {
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transform: rotate(360deg);
+  }
+
+  .price {
+    margin-left: 0.5rem;
+  }
+}
+
+/* DEFILLEMENT MENU*/
+
+.full__plats {
+  @for $i from 1 through 10 {
+    .defilement-#{($i)} {
+      opacity: 0;
+      animation-name: defilement-#{($i)};
+      animation-duration: 2s;
+      animation-delay: $i * 0.5s;
+      animation-fill-mode: forwards;
+      box-shadow: 8px 8px 8px rgb(189, 189, 189);
+      transition-duration: 1s;
+      border-radius: 15px;
+
+      &:hover {
+        filter: brightness(1.1);
+        box-shadow: 20px 20px 10px rgb(189, 189, 189);
+        transition-duration: 1s;
+      }
+    }
+  }
+
+  @for $i from 1 through 10 {
+    @keyframes defilement-#{($i)} {
+      0% {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
+}

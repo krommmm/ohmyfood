@@ -1,0 +1,19 @@
+.menu-header {
+  background-color: white;
+  height: 70px;
+  @extend %center-center;
+
+  i {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+  }
+
+  img {
+    position: relative;
+  }
+}
+
+header img {
+  height: 30px;
+}

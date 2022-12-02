@@ -1,0 +1,310 @@
+/*Location*/
+.location-container {
+  position: relative;
+  background-color: $dark-grey;
+  box-shadow: 0px 3px 6px $shadow inset;
+  height: 50px;
+
+  & form {
+    @extend %center-center;
+
+    & i {
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  & input {
+    margin-top: 15px;
+    border: none;
+    background-color: $dark-grey;
+    max-width: 145px;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+/*Reservation*/
+#reservation {
+  position: relative;
+  background-color: $light-grey;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  @extend %column-center-center;
+
+  & .reservation__container {
+    @extend %column-center-center;
+    margin-bottom: 22px;
+    padding-top: 19px;
+
+    & > p {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      max-width: 70%;
+      padding: 0;
+      margin: 5px;
+    }
+
+    & p:nth-child(2) {
+      font-size: 20px;
+      font-weight: 400;
+      opacity: 0.6;
+      padding-bottom: 25px;
+      margin-bottom: 10px;
+      max-width: 80%;
+    }
+  }
+}
+
+/*Operation*/
+#operation {
+  position: relative;
+
+  & > p {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 40px 0px 0px 6%;
+  }
+
+  & a {
+    display: inline-block;
+  }
+
+  & #operation__card {
+    @extend %center-center;
+    background: RGBa(147, 86, 220, 0.1);
+    width: 85vw;
+    padding: 15px;
+    margin: 4% 0% 2% 10%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0px $shadow;
+    transition-duration: 1s;
+
+    &:hover {
+      filter: brightness(1.1);
+      box-shadow: 20px 20px 10px rgb(189, 189, 189);
+      transition-duration: 1s;
+    }
+
+    & .card__number {
+      @extend %center-center;
+      position: absolute;
+      margin-left: -85vw;
+      background-color: $primary-color;
+      color: white;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+    }
+
+    & .card__icon {
+      position: relative;
+      margin-left: 6%;
+      margin-right: 5%;
+      font-size: 20px;
+
+      & i {
+        color: $primary-color;
+      }
+    }
+
+    & .card__txt {
+      padding: 15px;
+      font-weight: 600;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  & .operation__card {
+    @extend %center-center;
+    background-color: $light-grey;
+    width: 85vw;
+    padding: 15px;
+    margin: 4% 0% 2% 10%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0px $shadow;
+    transition-duration: 1s;
+
+    &:hover {
+      filter: brightness(1.1);
+      box-shadow: 20px 20px 10px rgb(189, 189, 189);
+      transition-duration: 1s;
+    }
+
+    & .card__number {
+      @extend %center-center;
+      position: absolute;
+      margin-left: -85vw;
+      background-color: $primary-color;
+      color: white;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+    }
+
+    & .card__icon {
+      position: relative;
+      margin-left: 6%;
+      margin-right: 5%;
+      font-size: 20px;
+
+      & i {
+        color: $grey;
+      }
+    }
+
+    & .card__txt {
+      padding: 15px;
+      font-weight: 600;
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+/*Restaurant*/
+#restaurants {
+  background-color: $light-grey;
+  padding-bottom: 50px;
+  position: relative;
+
+  & > p {
+    margin: 10% 0px 3% 6%;
+    padding-top: 11%;
+    padding-bottom: 2%;
+  }
+
+  & .restaurants__container {
+    @extend %column-center-center;
+
+    & .container__card {
+      background-color: white;
+      border-radius: 15px 15px 15px 15px;
+      margin: 0% 5% 0% 5%;
+      box-shadow: 5px 5px 15px 5px $shadow;
+      transition-duration: 1s;
+
+      &:hover {
+        transition-duration: 1s;
+        box-shadow: 20px 20px 10px rgb(189, 189, 189);
+      }
+
+      & .card__top {
+        @extend %center-center;
+
+        & .top__new {
+          background-color: $light-green;
+          color: $dark-green;
+          display: inline-block;
+          position: absolute;
+          margin-bottom: 27vw;
+          margin-left: 60vw;
+          padding: 2%;
+          border-radius: 5px;
+          font-weight: 600;
+        }
+
+        & img {
+          width: 96vw;
+          height: 46vw;
+          border-radius: 15px 15px 0px 0px;
+          object-fit: cover;
+
+          & .palette {
+            object-position: 50% 94%;
+          }
+
+          & .note {
+            object-position: 100% 61%;
+          }
+
+          & .française {
+            object-position: 49% 69%;
+          }
+
+          & .delice {
+            object-position: 49% 98%;
+          }
+        }
+      }
+
+      & .card__bot {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        min-height: 70px;
+
+        & p:first-child {
+          margin: 15px 0px 0px 10px;
+          padding: 0px 0px 0px 0px;
+        }
+
+        & p:last-child {
+          margin: 3px 0px 0px 10px;
+        }
+      }
+    }
+
+    /*Coeur du restaurant*/
+    & .container__heart {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 0px;
+      left: 28vw;
+      bottom: 60px;
+      position: relative;
+      z-index: 3;
+
+      & input {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        right: -5px;
+        top: 0px;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 3;
+      }
+
+      & input:checked ~ .far {
+        transition-duration: 2s;
+        opacity: 0;
+      }
+
+      & input:checked ~ .fas {
+        transition-duration: 2s;
+        opacity: 1;
+      }
+
+      & > i {
+        color: black;
+        position: absolute;
+        @extend %center-center;
+        right: -5px;
+        top: 0px;
+      }
+
+      .fas {
+        /*plein*/
+        opacity: 0;
+        transition-duration: 0.5s;
+        background: linear-gradient(
+          3deg,
+          ($primary-color) 0%,
+          ($secondary-color) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .fa-heart {
+        font-size: 30px;
+      }
+    }
+  }
+}

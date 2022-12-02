@@ -1,0 +1,9 @@
+.main-header {
+  background-color: white;
+  @extend %center-center;
+  height: 70px;
+}
+
+.main-header img {
+  height: 30px;
+}
